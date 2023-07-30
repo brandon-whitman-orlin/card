@@ -1,0 +1,96 @@
+:root {
+    --color1: #000000;
+    --color2: #000000;
+    --color3: #ffffff;
+    --font1: "Poppins";
+    --font2: "Poppins";
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 5%;
+    background-color: var(--color3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card h2 {
+    color: var(--color1);
+    font-family: var(--font1);
+    font-size: clamp(1rem, -1.5rem + 8vw, 3rem);
+    margin: 0.25rem;
+}
+
+.card p {
+    color: var(--color2);
+    font-family: var(--font2);
+    font-size: clamp(0.75rem, -1.5rem + 5vw, 1.5rem);
+    margin: 0.25rem;
+}
+
+.colorPalette {
+    margin: 1rem;
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    box-shadow:
+        0 0 0 2px #ffffff,
+        0 0 0 4px #000000;
+}
+
+.colorP {
+    position: relative;
+    height: 100%;
+    width: 1rem;
+    flex: 100%;
+}
+
+#colorP1 {
+    background-color: var(--color1);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#colorP2 {
+    background-color: var(--color2);
+}
+
+#colorP3 {
+    background-color: var(--color3);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.controls {
+    padding: 2rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.5);
+    position: relative;
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.controlButtons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 0.5rem;
+}
+
+.controlButtons input {
+    max-width: 10rem;
+    width: 20vw;
+}
